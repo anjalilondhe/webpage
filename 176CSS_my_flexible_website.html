@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale:1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial;
+                margin: 0;
+            }
+            .navbar {
+                display: flex;
+                background-color: #333;
+            }
+            .navbar a {
+                color: white;
+                padding: 20px 25px;
+                text-align: center;
+                text-decoration: none;
+            }
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .active {
+                background-color: lightgreen;
+                color: white;
+            }
+            .dropbtn {
+                background-color: black;
+                color: white;
+                padding: 20px;
+                font-size: 15px;
+                border: none;
+                cursor: pointer;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 260px;
+                z-index: 1;
+            }
+            .dropdown-content a{
+                color: black;
+                padding: 20px 25px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown: hover .dropbtn {
+                background-color: #3e8e41;
+            }
+            .dropbtn:hover {
+                background-color: #ddd;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .side {
+                flex: 30%;
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+            .main {
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+            }
+            img {
+                border-radius: 4px;
+                padding: 5px;
+                width: 100%;
+              }
+              
+              img:hover {
+                box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            }
+            .footer {
+                background-color: #aaa;
+                padding: 30px;
+                text-align: center;
+            }
+            div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                padding: 5px;
+              }
+        </style>
+    </head>
+    <body>
+        <div class="sticky">
+        <div class="navbar">
+            <a class="active"href="https://www.bing.com/search?q=italy&cvid=db1268896e3d4dc5af8595ecd0848595&aqs">All</a>
+            <a href="https://www.bing.com/images/search?q=italy&form=HDRSC2&first=1&tsc=ImageBasicHover">Images</a>
+            <a href="https://www.bing.com/videos/search?q=italy&FORM=HDRSC3">Videos</a>
+            <a href="https://www.bing.com/maps?q=italy&FORM=HDRSC4">Map</a>
+            <a href="https://www.bing.com/news/search?q=italy&FORM=HDRSC6">News</a>
+            <a href="https://www.bing.com/shop?q=italy&FORM=SHOPTB">Shopping</a>
+            <div class="dropdown">
+                <button class="dropbtn"style="font-size: 17px">Cities</button>
+                <div class="dropdown-content">
+                    <a href="#">Megacities</a>
+                    <a href="#">Famous Cities</a>
+                    <a href="#">Capital Cities Africa</a>
+                    <a href="#">Capital Cities Americas</a>
+                    <a href="#">Capital Cities Asia</a>
+                    <a href="#">Capital Cities Australia</a>
+                    <a href="#">Capital Cities Europe</a>
+                    <a href="#">US Capital Cities</a>
+                    <a href="#">Largest US Cities</a>
+                    <a href="#">Airlines and Airports</a>
+                </div>
+                <button class="dropbtn"style="font-size: 17px;">Countries</button>
+                <div class="dropdown-content">
+                    <a>Countries A to Z</a>
+                    <a>Sovereign States</a>
+                    <a>Dependent Areas</a>
+                    <a>Countries by Area</a>
+                    <a>Country Population</a>
+                    <a>Island Countries</a>
+                    <a>Human Development Index</a>
+                    <a>Countries by Corruption</a>
+                    <a>Countries and Press Freedom</a>
+                    <a>Country Flags</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="side">
+                <h2>About me</h2>
+                <h5>Photo of me</h5>
+                <div class="img">
+                    <a target="_blank"href="italy.jpg">
+                        <img src="italy.jpg"alt="italy"style="width: 100%">
+                    </a>
+                </div>
+                <p style="font-size: 15px">Destination Italy, a Nations Online country profile of "Bella Italia" - beautiful Italy, how many Italians love to call their country.
+                    Italy is located in southern Europe on the Apennine Peninsula. Its distinct shape, resembling a kicking boot, makes it easy to recognize it on maps or even from space.
+                    The Adriatic Sea borders the peninsula in the east, the Sea of Sicily in the south, the Ionian Sea in the southeast, the Ligurian Sea and the Tyrrhenian Sea in the west; all those seas are parts of the Mediterranean Sea.</p>
+
+                <h3>More Text</h3>
+                <p style="font-size:15px">Italy has international borders with Austria, France, the Holy See (Vatican City), San Marino, Slovenia, and Switzerland. It also shares maritime borders with Albania, Algeria, Croatia, Greece, Libya, Malta, Montenegro, Spain, and Tunisia.</p>
+                <div class="img">
+                <a target="_blank"href="italy2.jpg">
+                    <img src="italy2.jpg"alt="italy"style="width:100%;height:50%">
+                </a>
+
+                <a target="_blank"href="italy3.jpg">
+                    <img src="italy3.jpg"alt="italy"style="width: 100%;height:50%;">
+                </a>
+                </div>
+            </div>
+            
+            <div class="main">
+                <h2>TITLE HEADING</h2>
+                <p>Title description,Dec 7,2017</p>
+                <div class="img">
+                        <img src="italy4.jpg"alt="italy"style="width: 100%;height: 390px">
+                </div>
+                <p>Some text...</p>
+                <p><strong>Italy</strong> (Italian: Italia [iˈtaːlja] (audio speaker iconlisten)), officially the Italian Republic (Italian: Repubblica Italiana [reˈpubblika itaˈljaːna]),[13][14] is a country consisting of a peninsula delimited by the Alps and several islands surrounding it,[15] whose territory largely coincides with the homonymous geographical region.[16] Italy is located in the middle of the Mediterranean Sea, in Southern Europe;[17][18][19] it is also considered part of Western Europe.[20][21] A unitary parliamentary republic with Rome as its capital and largest city, the country covers a total area of 301,230 km2 (116,310 sq mi) and shares land borders with France, Switzerland, Austria, Slovenia, as well as the enclaved microstates of Vatican City and San Marino. Italy has a territorial exclave in Switzerland (Campione. With around 60 million inhabitants[22], Italy is the third-most populous member state of the European Union.</p>
+                <h2>TITLE HEADING</h2>
+                <p>Title description,Dec 10,2000</p>
+                <div class="img">
+                        <img src="italy6.jpg"style="width:100%;height:390px;">
+                </div>
+                <p>Due to its central geographic location in Southern Europe and the Mediterranean, Italy has historically been home to myriad peoples and cultures. In addition to the various ancient peoples dispersed throughout what is now modern-day Italy, the most predominant being the Indo-European Italic peoples who gave the peninsula its name, beginning from the classical era, Phoenicians and Carthaginians founded colonies mostly in insular Italy,[23] Greeks established settlements in the so-called Magna Graecia of Southern Italy, while Etruscans and Celts inhabited central and northern Italy respectively. An Italic tribe known as the Latins formed the Roman Kingdom in the 8th century BC, which eventually became a republic with a government of the Senate and the People. The Roman Republic initially conquered and assimilated its neighbours on the Italian peninsula, eventually expanding and conquering parts of Europe, North Africa and Asia. By the first century BC, the Roman Empire emerged as the dominant power in the Mediterranean Basin and became a leading cultural, political and religious centre, inaugurating the Pax Romana, a period of more than 200 years during which Italy's law, technology, economy, art, and literature developed.[24][25]</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </body>
+</html>
